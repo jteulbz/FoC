@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<script language="JavaScript">
+<!--
+function calculateBmi() {
+var weight = document.bmiForm.weight.value
+var height = document.bmiForm.height.value
+if(weight > 0 && height > 0){ 
+var finalBmi = (weight/height/height)*703
+document.bmiForm.bmi.value = finalBmi
+if(finalBmi < 18.5){
+document.bmiForm.meaning.value = "Underweight"
+}
+if(finalBmi > 18.5 && finalBmi < 25){
+document.bmiForm.meaning.value = "Normal! Happy body happy life."
+}
+if(finalBmi > 25){
+document.bmiForm.meaning.value = "Overweight"
+}
+}
+else{
+alert("Please Fill in everything correctly")
+}
+}
+//-->
+</script>
+
+<body>
+<style>
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fdfdfd 
+}
+
+p {
+  text-indent: 20px;
+  text-align: left;
+  letter-spacing: 3px;
+  color: #F4F6F7 
+}
+
+body {
+
+  background-color: #adcbe7;
+}
+
+</script>
+</style>
+
+
+
+<h1>BMI Calculator</h1>
+
+<p>Wanna find out your body mass</p>
+
+<p>Go ahead and give it a try! Dnt be shy</p>
+
+<form name="bmiForm">
+Your Weight(lbs): <input type="text" name="weight" size="10"><br />
+Your Height(inches): <input type="text" name="height" size="10"><br />
+<input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+Your BMI: <input type="text" name="bmi" size="10"><br />
+This Means: <input type="text" name="meaning" size="25"><br />
+<input type="reset" value="Reset" />
+</form>
+</body>
+</html>
