@@ -6,6 +6,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fdfdfd 
+}
+
 p.ex1 {
   margin: 35px;
 }
@@ -15,7 +21,7 @@ img.bg {
   min-width: 1024px;
   width: 100%;
   height: auto;
-  position: fixed;
+  position: center;
   top: 0;
   left: 0;
 }
@@ -29,40 +35,42 @@ img.bg {
 
 /* Style the header */
 header {
-  border-style: solid;
-  border-color: rgb(252, 252, 252);
-  background-color: #f01818;
-  padding: 30px;
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
   color: white;
 }
 /*style the navigation bar*/
-nav li {
-  display: inline-block;
+ul {
   list-style-type: none;
-  position: relative;
-}
-
-nav li ul {
-  display: none;
-  position: absolute;
-  width: 100px;
-  left: 0;
-  top: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-nav li:hover > ul {
+  margin: 1px;
+  padding: 1px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+ }
+ 
+ li {
+  float: left;
+  border-right: 2px solid #e7e7e8;
+ }
+ 
+ li a {
   display: block;
-}
-
-nav a {
-  padding: 10px 10px;
-  color: rgb(136, 255, 0);
-  text-align: center;
-}
+  color: white;
+  text-align: left;
+  padding: 15px 17px;
+  text-decoration: none;
+ }
+ 
+ /* Links will change color when hovered over */
+ li a:hover {
+  background-color: #7300ff;
+ }
+ 
+ .active {
+  background-color: #d61d1d;
+ }
 
 img.bg {
   min-height: 300%;

@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>FoC</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style> 
+    body {
+    background-image: url("c.png");
+    background-color: #cccccc;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;}
+    </style>
+  </head>
+
 <script language="JavaScript">
 <!--
 function calculateBmi() {
@@ -26,44 +46,36 @@ alert("Please Fill in everything correctly")
 </script>
 
 <body>
-<style>
+ <ul>
+    <li><a href="index.html">COURSE</a></li> 
+    <li><a href="concepts.html">CONCEPTS</a></li>
+     <li><a href="database.html">DATABASE</a></li>
+     <li><a href="documentation.html">DOCUMENTATION</a></li>
+     <li><a href="project.html">PROJECTS</a><li>
+     <li><a href="team.html">TEAM</a></li>
+  </ul>
 
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  color: #fdfdfd 
-}
+  <div class="hero-image">
+    <div class="hero-text">
+      <header>
+        <h1 style="font-style: italic;"><b>Body Mass Calculator</b></h1><br><br>
+      </header>
 
-p {
-  text-indent: 20px;
-  text-align: left;
-  letter-spacing: 3px;
-  color: #F4F6F7 
-}
+      <form name="bmiForm">
+        Your Weight(lbs): <input type="text" name="weight" size="10"><br><br>
+        Your Height(inches): <input type="text" name="height" size="10"><br><br>
+        <input type="button" value="Calculate BMI" onClick="calculateBmi()"><br><br>
+        Your BMI: <input type="text" name="bmi" size="10"><br><br>
+        This Means: <input type="text" name="meaning" size="25"><br><br>
+        <input type="reset" value="Reset" />
+        </form>
+    </div>
+  </div>
+  <footer>
+  <div class="footer">
+    <p>@ Powered by UB<br></p>
+  </div>
+</footer>
 
-body {
-
-  background-color: #adcbe7;
-}
-
-</script>
-</style>
-
-
-
-<h1>BMI Calculator</h1>
-
-<p>Wanna find out your body mass</p>
-
-<p>Go ahead and give it a try! Dnt be shy</p>
-
-<form name="bmiForm">
-Your Weight(lbs): <input type="text" name="weight" size="10"><br />
-Your Height(inches): <input type="text" name="height" size="10"><br />
-<input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
-Your BMI: <input type="text" name="bmi" size="10"><br />
-This Means: <input type="text" name="meaning" size="25"><br />
-<input type="reset" value="Reset" />
-</form>
 </body>
 </html>

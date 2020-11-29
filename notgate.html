@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <title>FoC</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <style> 
+      body {
+      background-image: url("b1.png");
+      background-color: #cccccc;
+      height: 600px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;}
+      </style>  
 </head>
 <body>
+  <ul>
+    <li><a href="index.html">COURSE</a></li> 
+    <li><a href="concepts.html">CONCEPTS</a></li>
+     <li><a href="database.html">DATABASE</a></li>
+     <li><a href="documentation.html">DOCUMENTATION</a></li>
+     <li><a href="project.html">PROJECTS</a><li>
+     <li><a href="team.html">TEAM</a></li>
+  </ul>
 
-  <header>
-    <h2 style="font-family: brush script mt;" class="solid"><b>Fundamentals of Computing</b></h2>
-  </header>
-  
-  <section>
-  
-    <nav>
-      <ul>
-         <li><a href="index.html">COURSE</a></li> 
-         <li><a href="concepts.html">CONCEPTS</a></li>
-         <li><a href="database.html">DATABASE</a></li>
-         <li><a href="documentation.html">DOCUMENTATION</a></li>
-         <li><a href="project.html">PROJECTS</a>
-            <ul>
-               <li><a href="andgate.html">AND GATE</a></li>
-               <li><a href="notgate.html">NOT GATE</a></li>
-               <li><a href="or.html">OR GATE</a></li>
-               <li><a href="xorgate.html">XOR GATE</a></li>
-               <li><a href="flipflopgates.html">Flipflop GATE</a></li>
-               <li><a href="bmi.html">BMI CALCULATOR</a></li>
-            </ul>
-         </li>
-         <li><a href="team.html">TEAM</a></li>
-      </ul>
-    </nav>
+  <div class="hero-image">
+    <div class="hero-text">
+      <header>
+        <h1 style="font-style: italic;"><b>Fundamentals of Computing</b></h1>
+      </header>
 <style>
      .button {
   border: none;
@@ -71,12 +67,6 @@
   color: white;
 }
 
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  color: #4CAF50;
-}
-
 
 
 img {
@@ -85,13 +75,6 @@ img {
   margin-right: auto;
 }
 
-
-body {
-
-  background-color: #ffffff;
-}
-
-
 </style>
 <article>
 <section>
@@ -99,15 +82,12 @@ body {
 
 <h1>Not Gate Sample</h1>
 
-<p style="font-family:bulluga;" class="ex1"> Hi. In my group I'm assigned as student 3 on the group and I'll be based on Interactive Web Page demonstrating program and data being loaded into the CPU operated on and being stored back into memory. We will see how to go about with that. 
-</p>
-
 <p style="font-family:bulluga;" class="ex1">The NOT gate is a single input single output gate. This gate is also known as Inverter because it performs the inversion of the applied binary signal, i.e., it converts 0 into 1 or 1 into 0.</p>
 
 
-<button onclick="document.getElementById('myImage').src='not.jpg'">Positive</button>
+<button onclick="document.getElementById('myImage').src='not.jpg'">Positive</button><br><br>
 
-<img id="myImage" src="not.jpg" style="width:150px 200px">
+<img id="myImage" src="not.jpg" style="width:150px 200px"><br><br>
 
 <button onclick="document.getElementById('myImage').src='not1.jpg'">Negative</button>
 </section>
