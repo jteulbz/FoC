@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoC</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style> 
+      body {
+      background-image: url("b1.png");
+      background-color: #cccccc;
+      height: 600px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;}
+
+      img {
+  float: left;
+ padding-right: 40px; 
+ padding-left: 40px;
+ padding-bottom: 40px;
+ }
+      </style>  
+
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">COURSE</a></li> 
+    <li><a href="concepts.html">CONCEPTS</a></li>
+     <li><a href="database.html">DATABASE</a></li>
+     <li><a href="documentation.html">DOCUMENTATION</a></li>
+     <li><a href="project.html">PROJECTS</a><li>
+     <li><a href="team.html">TEAM</a></li>
+  </ul>
+
+  <div class="hero-image">>
+<br><br>
+<br><br>
+      <p><img src="ACSII.png" style="width:792px;height:528px;"></p>
+
+<article>
+<section>
+
+<header>
+<h1>Representing text as ASCII</h1>
+</header>
+
+<p style="font-family:bulluga;" class="ex1">Enter any number from 0 to 127 : <input id="inputdec" >
+</p>
+
+<button onclick="decToASCII()">Submit</button>
+<br><br>
+<p>ASCII Value : <p id="demo"></p> </p>
+
+
+<script>
+    function decToASCII() {
+      x = document.getElementById("inputdec").value;
+      var res = String.fromCharCode(x);
+      document.getElementById("demo").innerHTML = res;
+      console.log(res);
+    }
+    </script>
+
+</section>
+</article>
+</body>
+</html>

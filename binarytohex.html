@@ -31,19 +31,47 @@
   </ul>
 
   <div class="hero-image">
-    <div class="hero-text">
-      <header>
-        <h1 style="font-style: italic;"><b>Fundamentals of Computing</b></h1>
-      </header>
+<br><br>
+<br><br>
+<header>
+    <h> Floating Point Notation</h>
+    </header>
 
-      <p> Floating Point Notation</p>
-      <label for="fname">Enter a Decimal Number:</label>
-      <input type="text" id="fname" name="fname"><br><br>
-      <input type="submit" value="Convert"><br><br>
-      <label for="lname">Converted to Binary:</label>
-      <input type="text" id="lname" name="lname"><br><br>
-    </div>
-  </div>
+
+<script language="JavaScript">
+<!--
+function converttoBin() {
+var decimal = document.ConverterForm.decimal.value
+while(decimal >0){
+if(decimal %2 == 0){ 
+   binary ="0" + binary; 
+}
+   else {
+   	binary = "1" + binary;
+   }
+
+temp = Math.floor (temp / 2);
+}
+
+return document.ConverterForm.binary.value = binary;
+document.ConverterForm.binary.value = binary
+}
+
+//-->
+</script>
+
+
+
+<body>
+  <center> 
+<form name="ConverterForm">
+        <p>Enter the decimal-flp:</p> <input type="text" name="decimal" size="10"><br><br>
+        <input type="button" value="Convert to binary" onClick="converttoBin()"><br><br>
+        <p>converted to binary :</p> <p id="demo"></p>
+       
+        <input type="reset" value="Reset" />
+        </form>
+        </center>
   
   </body>
 </html>
